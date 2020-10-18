@@ -67,7 +67,7 @@ class voice:
         global recognized_text
         with sr.AudioFile(filename) as source:
             #r.adjust_for_ambient_noise(source=source, duration=0.5)
-            wait_time = 3
+            wait_time = 2
             while True:
                 audio = r.record(source, duration=3)
                 if audio:
